@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAMF_LA01", "GAMF_LA01\GAMF_LA01.csproj", "{0DE24405-C30C-4870-8017-81F826DEA9E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DE24405-C30C-4870-8017-81F826DEA9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE24405-C30C-4870-8017-81F826DEA9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE24405-C30C-4870-8017-81F826DEA9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE24405-C30C-4870-8017-81F826DEA9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E171994-A5F9-467A-AAE8-AC4BFDAA31A9}
+	EndGlobalSection
+EndGlobal
