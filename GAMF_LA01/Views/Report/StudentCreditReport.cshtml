@@ -1,0 +1,32 @@
+﻿@model IEnumerable<StudentReportVM>
+@{
+    ViewData["Title"] = "Student Report ";
+}
+
+<h2>Hallgatói creditek riport</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Hallgató neve
+            </th>
+            <th>
+                Creditek száma
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.StudentName
+                </td>
+                <td>
+                    @item.StudentCredit;
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

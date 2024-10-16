@@ -1,0 +1,32 @@
+﻿@model IEnumerable<EnrollmentDateVM>
+@{
+    ViewData["Title"] = "EnrollmentDateReport";
+}
+
+<h2>Első jelentkezések riport</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Első jelentkezés dátuma
+            </th>
+            <th>
+                Hallgatók száma
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.EnrollmentDate.ToString();
+                </td>
+                <td>
+                    @item.StudentCount;
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
