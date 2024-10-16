@@ -1,0 +1,59 @@
+﻿@model GAMF_LA01.Models.Student
+
+@{
+    ViewData["Title"] = "Részletek";
+}
+
+<h1>Részletek</h1>
+
+<div>
+    <h4>Hallgató</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EnrollmentDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EnrollmentDate)
+        </dd>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Enrollments.First().Course.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Enrollments.First().Grade)
+                    </th>
+                </tr>
+                @foreach (var item in Model.Enrollments)
+                {
+                   <tr>
+                       <td>
+                           @Html.DisplayFor(modelitem => item.Course.Title)
+                       </td>
+                        <td>
+                            @Html.DisplayFor(modelitem => item.Grade)
+                        </td>
+                   </tr> 
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Módosítás</a> |
+    <a asp-action="Index">Vissza</a>
+</div>
